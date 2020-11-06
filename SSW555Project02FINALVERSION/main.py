@@ -32,7 +32,6 @@ def printWhole(text_file):
 
     for word in key_words:
       if word in line:
-
         tag = word
         y = 'Y'
         y_count = y_count + 1
@@ -192,9 +191,7 @@ def marriedPercentage():
     d = c*100
     print(d)
     print( "percent of the people in this file are married")
-    
     return c
-
   a = marriedPeople(text_file_married)
   b = totalPeople(text_file_2)
 
@@ -203,4 +200,14 @@ def marriedPercentage():
   
   return percent_married
 
+
+##This is user story to add functionality to print all males in a genealogy
+  if line[1] == "NAME":
+    name = line[2]
+  while line[2] != "M" or "F":
+    if line[2] == "M":
+      print(name)
+
+  print('<-- |' + derp + '|' + lerp + '|' + y)
+  print("-->", line)
 
